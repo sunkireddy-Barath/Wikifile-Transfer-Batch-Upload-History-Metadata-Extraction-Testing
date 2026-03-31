@@ -22,7 +22,7 @@ export default function Sidebar() {
       <Box sx={{ p: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
         <Box
           component="img"
-          src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo-%233366CC.svg"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Indic-TechCom_Logo.svg"
           sx={{ width: 32, height: 32 }}
           alt="Logo"
         />

@@ -40,7 +40,7 @@ export default function AppShell({ children }) {
           <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, gap: 1.5 }}>
             <Box
               component="img"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo-%233366CC.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/52/Indic-TechCom_Logo.svg"
               sx={{ width: 32, height: 32, display: { xs: 'flex', sm: 'none' } }}
               alt="Logo"
             />
