@@ -4,24 +4,21 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import AppShell from './components/layout/AppShell';
 import BatchUploadPanel from './components/batch/BatchUploadPanel';
-import HistoryDashboard from './history/HistoryDashboard'; // Wait, I put it in components/history/HistoryDashboard.jsx
+import HistoryDashboard from './components/history/HistoryDashboard';
 import { BatchProvider } from './context/BatchContext';
 import { HistoryProvider } from './context/HistoryContext';
 import './i18n';
 
-// Placeholder for Home (Single Transfer)
+// Preserved placeholder for existing Single Transfer tool
 const Home = () => (
     <Container sx={{ mt: 4 }}>
-        <Typography variant="h4">Single Transfer Page</Typography>
-        <Typography variant="body1" sx={{ mt: 2 }}>
-            This page is preserved as-is from the existing tool. 
-            Navigate to Batch Upload or History using the sidebar.
+        <Typography variant="h4" sx={{ fontWeight: 700, mb: 2 }}>Single Transfer Page</Typography>
+        <Typography variant="body1">
+            This page represents the original, existing tool. Preserved as a reference.
+            Use the sidebar to explore <strong>Batch Upload</strong> and <strong>History Dashboard</strong>.
         </Typography>
     </Container>
 );
-
-// Actually, I should use the correct path for HistoryDashboard
-import HistoryDashboardRef from './components/history/HistoryDashboard';
 
 export default function App() {
   return (
@@ -33,7 +30,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/batch" element={<BatchUploadPanel />} />
-                <Route path="/history" element={<HistoryDashboardRef />} />
+                <Route path="/history" element={<HistoryDashboard />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </AppShell>
@@ -43,5 +40,6 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
 
 import { Container, Typography } from '@mui/material';

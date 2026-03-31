@@ -194,8 +194,13 @@ src/
 - Node.js 20+
 - The Flask backend running on `http://localhost:5000` OR mock mode enabled
 
-### Setup
+### Windows Automation Scripts (Recommended)
 
+If you are on Windows, you can use the provided batch scripts for a one-click experience:
+- **`setup.bat`**: Installs all required dependencies.
+- **`start.bat`**: Launches the application in **Mock Mode** (no backend required).
+
+### Manual Setup
 ```bash
 git clone https://github.com/indictechcom/wikifile-transfer
 cd wikifile-transfer/frontend
@@ -203,15 +208,16 @@ npm install
 ```
 
 ### Run (with mock API — no backend needed)
-
 ```bash
-# Add VITE_USE_MOCK=true to your .env file or run directly:
-npm run dev -- --host --port 5173 
-# (Note: Use VITE_USE_MOCK=true environment variable in your terminal)
+# Via start script:
+.\start.bat
+
+# Or manually:
 VITE_USE_MOCK=true npm run dev
 ```
 
 App runs at `http://localhost:5173`
+
 
 ### Run E2E Tests
 
