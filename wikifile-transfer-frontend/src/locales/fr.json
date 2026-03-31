@@ -1,0 +1,40 @@
+{
+  "common": {
+    "title": "Amélioration de Wikifile-Transfer",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "success": "Succès",
+    "failed": "Échoué",
+    "queued": "En file d'attente",
+    "processing": "Traitement...",
+    "actions": "Actions"
+  },
+  "nav": {
+    "singleTransfer": "Transfert Unique",
+    "batchUpload": "Téléchargement par Lot",
+    "history": "Historique des Téléchargements",
+    "language": "Langue",
+    "user": "Connecté en tant que {{user}}"
+  },
+  "batch": {
+    "panelTitle": "Téléchargement par Lot",
+    "fileListTitle": "Fichiers à Transférer",
+    "filePlaceholder": "Entrez le titre du fichier (ex. Fichier:Exemple.jpg)",
+    "addFile": "Ajouter un Fichier",
+    "removeFile": "Supprimer",
+    "sharedMetadata": "Métadonnées Partagées",
+    "targetWiki": "Wiki Cible",
+    "licensingTemplate": "Modèle de Licence",
+    "description": "Description",
+    "author": "Auteur",
+    "date": "Date",
+    "transferAll": "Transférer Tout",
+    "perFileOverrides": "Remplacements par Fichier",
+    "progressPanel": "Progreso de Transferencia",
+    "summary": "Résumé Complet",
+    "summaryStats": "{{success}} Succès, {{failed}} Échecs",
+    "viewHistory": "Voir l'Historique",
+    "categoriesLocalized": "Catégories localisées"
+  }
+}

@@ -24,6 +24,8 @@ export default function LanguageSwitcher() {
         sx={{ borderRadius: 1 }}
       >
         <MenuItem value="en">English (en)</MenuItem>
+        <MenuItem value="es">Español (es)</MenuItem>
+        <MenuItem value="fr">Français (fr)</MenuItem>
         <MenuItem value="hi">Hindi (hi)</MenuItem>
         <MenuItem value="te">Telugu (te)</MenuItem>
         <MenuItem value="ta">Tamil (ta)</MenuItem>

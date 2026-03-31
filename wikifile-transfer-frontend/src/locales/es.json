@@ -1,0 +1,56 @@
+{
+  "common": {
+    "title": "Mejora de Wikifile-Transfer",
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "retry": "Reintentar",
+    "success": "Éxito",
+    "failed": "Fallido",
+    "queued": "En cola",
+    "processing": "Procesando",
+    "actions": "Acciones"
+  },
+  "nav": {
+    "singleTransfer": "Transferencia Única",
+    "batchUpload": "Carga por Lotes",
+    "history": "Historial de Carga",
+    "language": "Idioma",
+    "user": "Conectado como {{user}}"
+  },
+  "batch": {
+    "panelTitle": "Carga por Lotes",
+    "fileListTitle": "Archivos a Transferir",
+    "filePlaceholder": "Ingrese el título del archivo (ej. Archivo:Ejemplo.jpg)",
+    "addFile": "Agregar Archivo",
+    "removeFile": "Eliminar",
+    "sharedMetadata": "Metadatos Compartidos",
+    "targetWiki": "Wiki de Destino",
+    "licensingTemplate": "Plantilla de Licencia",
+    "description": "Descripción",
+    "author": "Autor",
+    "date": "Fecha",
+    "transferAll": "Transferir Todo",
+    "perFileOverrides": "Anulaciones por Archivo",
+    "progressPanel": "Progreso de Transferencia",
+    "summary": "Resumen Completo",
+    "summaryStats": "{{success}} Éxitos, {{failed}} Fallos",
+    "viewHistory": "Ver Historial",
+    "categoriesLocalized": "Categorías localizadas"
+  },
+  "history": {
+    "title": "Historial de Cargas",
+    "total": "Transferencias Totales",
+    "successRate": "Tasa de Éxito",
+    "topTarget": "Destino más Utilizado",
+    "filters": "Filtros",
+    "status": "Estado",
+    "sourceWiki": "Wiki de Origen",
+    "targetWiki": "Wiki de Destino",
+    "dateRange": "Rango de Fechas",
+    "all": "Todo",
+    "noRecords": "No se encontraron registros de historial",
+    "fileTitle": "Título del Archivo",
+    "timestamp": "Marca de Tiempo",
+    "errorMessage": "Error: {{message}}"
+  }
+}
