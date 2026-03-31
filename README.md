@@ -109,11 +109,12 @@ graph TD
 - **Git**: To clone the repository.
 
 ### 2. Quick Start (Windows)
-Navigate to the `wikifile-transfer-frontend` directory and use:
-- **`setup.bat`**: Installs all required dependencies.
+For a one-click experience on Windows, use the provided batch files in the **Root** folder:
+- **`setup.bat`**: Automatically navigates to the frontend and installs all dependencies.
 - **`start.bat`**: Launches the application in **Mock Mode** (no backend required).
 
 ### 3. Manual Deployment
+Navigate to the `wikifile-transfer-frontend` directory:
 ```bash
 cd wikifile-transfer-frontend
 npm install --force
