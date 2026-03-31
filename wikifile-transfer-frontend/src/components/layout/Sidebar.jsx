@@ -64,9 +64,6 @@ export default function Sidebar() {
       <Divider />
       <Box sx={{ p: 2 }}>
         <LanguageSwitcher />
-        <Typography variant="caption" sx={{ display: 'block', mt: 2, color: 'text.secondary' }}>
-          {t('nav.user', { user: 'GSoC Contributor' })}
-        </Typography>
       </Box>
     </Box>
   );
