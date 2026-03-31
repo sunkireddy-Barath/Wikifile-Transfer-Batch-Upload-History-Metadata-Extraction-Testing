@@ -1,0 +1,56 @@
+{
+  "common": {
+    "title": "Wikifile-Transfer Enhancement",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "success": "Success",
+    "failed": "Failed",
+    "queued": "Queued",
+    "processing": "Processing",
+    "actions": "Actions"
+  },
+  "nav": {
+    "singleTransfer": "Single Transfer",
+    "batchUpload": "Batch Upload",
+    "history": "Upload History",
+    "language": "Language",
+    "user": "Logged in as {{user}}"
+  },
+  "batch": {
+    "panelTitle": "Batch Upload",
+    "fileListTitle": "Files to Transfer",
+    "filePlaceholder": "Enter file title (e.g., File:Example.jpg)",
+    "addFile": "Add File",
+    "removeFile": "Remove",
+    "sharedMetadata": "Shared Metadata",
+    "targetWiki": "Target Wiki",
+    "licensingTemplate": "Licensing Template",
+    "description": "Description",
+    "author": "Author",
+    "date": "Date",
+    "transferAll": "Transfer All",
+    "perFileOverrides": "Per-File Overrides",
+    "progressPanel": "Transfer Progress",
+    "summary": "Full Summary",
+    "summaryStats": "{{success}} Succeeded, {{failed}} Failed",
+    "viewHistory": "View History",
+    "categoriesLocalized": "Categories localized"
+  },
+  "history": {
+    "title": "Upload History",
+    "total": "Total Transfers",
+    "successRate": "Success Rate",
+    "topTarget": "Most Used Target",
+    "filters": "Filters",
+    "status": "Status",
+    "sourceWiki": "Source Wiki",
+    "targetWiki": "Target Wiki",
+    "dateRange": "Date Range",
+    "all": "All",
+    "noRecords": "No history records found",
+    "fileTitle": "File Title",
+    "timestamp": "Timestamp",
+    "errorMessage": "Error: {{message}}"
+  }
+}
