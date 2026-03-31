@@ -35,10 +35,13 @@ export default function HistoryFilterBar({ filters, setFilters }) {
   const wikiOptions = [
     { value: '', label: 'Any Wiki' },
     { value: 'en.wikipedia.org', label: 'English (en.wikipedia)' },
-    { value: 'hi.wikipedia.org', label: 'Hindi (hi.wikipedia)' },
-    { value: 'te.wikipedia.org', label: 'Telugu (te.wikipedia)' },
-    { value: 'ta.wikipedia.org', label: 'Tamil (ta.wikipedia)' },
-    { value: 'bn.wikipedia.org', label: 'Bengali (bn.wikipedia)' },
+    { value: 'es.wikipedia.org', label: 'Spanish (es.wikipedia)' },
+    { value: 'fr.wikipedia.org', label: 'French (fr.wikipedia)' },
+    { value: 'de.wikipedia.org', label: 'German (de.wikipedia)' },
+    { value: 'ja.wikipedia.org', label: 'Japanese (ja.wikipedia)' },
+    { value: 'zh.wikipedia.org', label: 'Chinese (zh.wikipedia)' },
+    { value: 'ru.wikipedia.org', label: 'Russian (ru.wikipedia)' },
+    { value: 'it.wikipedia.org', label: 'Italian (it.wikipedia)' },
   ];
 
   return (

@@ -1,0 +1,40 @@
+{
+  "common": {
+    "title": "Wikifile-Transfer-Verbesserung",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen",
+    "success": "Erfolg",
+    "failed": "Fehlgeschlagen",
+    "queued": "Warteschlange",
+    "processing": "Verarbeitung...",
+    "actions": "Aktionen"
+  },
+  "nav": {
+    "singleTransfer": "Einzelübertragung",
+    "batchUpload": "Stapel-Upload",
+    "history": "Upload-Verlauf",
+    "language": "Sprache",
+    "user": "Eingeloggt als {{user}}"
+  },
+  "batch": {
+    "panelTitle": "Stapel-Upload",
+    "fileListTitle": "Dateien zum Übertragen",
+    "filePlaceholder": "Dateititel eingeben (z. B. Datei:Beispiel.jpg)",
+    "addFile": "Datei hinzufügen",
+    "removeFile": "Entfernen",
+    "sharedMetadata": "Gemeinsame Metadaten",
+    "targetWiki": "Ziel-Wiki",
+    "licensingTemplate": "Lizenzvorlage",
+    "description": "Beschreibung",
+    "author": "Autor",
+    "date": "Datum",
+    "transferAll": "Alle übertragen",
+    "perFileOverrides": "Anpassungen pro Datei",
+    "progressPanel": "Übertragungsfortschritt",
+    "summary": "Vollständige Zusammenfassung",
+    "summaryStats": "{{success}} Erfolgreich, {{failed}} Fehlgeschlagen",
+    "viewHistory": "Verlauf anzeigen",
+    "categoriesLocalized": "Kategorien lokalisiert"
+  }
+}
