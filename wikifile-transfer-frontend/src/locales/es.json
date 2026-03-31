@@ -14,8 +14,7 @@
     "singleTransfer": "Transferencia Única",
     "batchUpload": "Carga por Lotes",
     "history": "Historial de Carga",
-    "language": "Idioma",
-    "user": "Conectado como {{user}}"
+    "language": "Idioma"
   },
   "batch": {
     "panelTitle": "Carga por Lotes",

@@ -14,8 +14,7 @@
     "singleTransfer": "Single Transfer",
     "batchUpload": "Batch Upload",
     "history": "Upload History",
-    "language": "Language",
-    "user": "Logged in as {{user}}"
+    "language": "Language"
   },
   "batch": {
     "panelTitle": "Batch Upload",

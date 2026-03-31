@@ -14,8 +14,7 @@
     "singleTransfer": "Einzelübertragung",
     "batchUpload": "Stapel-Upload",
     "history": "Upload-Verlauf",
-    "language": "Sprache",
-    "user": "Eingeloggt als {{user}}"
+    "language": "Sprache"
   },
   "batch": {
     "panelTitle": "Stapel-Upload",

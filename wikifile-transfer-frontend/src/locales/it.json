@@ -14,8 +14,7 @@
     "singleTransfer": "Trasferimento Singolo",
     "batchUpload": "Caricamento in Blocco",
     "history": "Cronologia Caricamenti",
-    "language": "Lingua",
-    "user": "Connesso come {{user}}"
+    "language": "Lingua"
   },
   "batch": {
     "panelTitle": "Caricamento in Blocco",

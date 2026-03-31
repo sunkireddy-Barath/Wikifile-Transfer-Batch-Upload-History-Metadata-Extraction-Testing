@@ -1,13 +1,36 @@
-# Wikifile-Transfer Dashboard
+# Google Summer of Code 2026 Proposal - Wikimedia Foundation
 
-A high-performance React 18 dashboard for the **Wikifile-Transfer Enhancement** project (Wikimedia Foundation, GSoC 2026). This tool enables seamless media transfer across Wikipedia projects with advanced batch capabilities and real-time tracking.
+## Wikifile-Transfer Batch Upload & History Dashboard
 
-## Description
-Wikifile-Transfer is a Toolforge web application that helps Wikimedia contributors transfer media files (especially non-free/fair-use images) between different wiki projects. This enhancement project adds batch transfer capabilities, a historical dashboard for tracking uploads, and automated category localization.
+### Enhancement Dashboard — Media Transfer Intelligence
 
-## Architecture
+A high-performance, polished interface designed for Wikimedia contributors. This dashboard provides real-time visibility into multi-file transfer operations and enables secure, tracked media migration across the global wiki ecosystem.
 
-### System Flow
+---
+
+## Project Description
+
+The **Wikifile-Transfer Dashboard** is a specialized tool under the GSoC 2026 proposal to modernize media transfer workflows within the Wikimedia ecosystem. It replaces traditional, manual single-file transfers with a self-service, real-time platform where contributors can initiate batch operations, monitor their progress, and audit their transfer history across all wiki languages.
+
+The project emphasizes **Operational Efficiency** and **Data Integrity**, ensuring that contributors can move large volumes of media (including non-free content) with automated metadata localization and robust error handling.
+
+---
+
+## Project Motivation
+
+As the Wikimedia movement grows, transferring media across projects remains a bottleneck for many volunteers. This proposal addresses key pain points:
+
+*   **Batch Transfer Efficiency**: Remove the requirement to manually repeat the transfer process for every individual file.
+*   **Persistent Transfer Tracking**: Provide a centralized record of all past operations to prevent loss of data during failed attempts.
+*   **Metadata Localization**: Automatically translate categories and localize licensing templates during the transfer process.
+*   **System Reliability**: Implement a robust polling architecture that ensures users stay informed during long-running background tasks.
+
+---
+
+## System Architecture (High Visibility)
+
+The project follows a modular, state-driven React architecture designed for maximum clarity and performance.
+
 ```mermaid
 graph TD
     subgraph "Client Layer (React 18 + MUI 6)"
@@ -38,73 +61,37 @@ graph TD
     end
 ```
 
-### Component Structure
-```
-┌─────────────────────────────────────────────────────┐
-│  Frontend (React 18 + MUI 6)                        │
-│  /batch — BatchUploadPanel + BatchProgressTable     │
-│  /history — HistoryDashboard + StatsPanel           │
-└────────────────────┬────────────────────────────────┘
-                     │ HTTP (Axios)
-┌────────────────────▼────────────────────────────────┐
-│  Controller (Flask Blueprints)                      │
-│  POST /api/batch-upload                             │
-│  GET  /api/batch-status/{batch_id}                  │
-│  GET  /api/history                                  │
-│  POST /api/retry/{transfer_id}                      │
-└──────────┬──────────────────────┬───────────────────┘
-           │ dispatch             │ query
-┌──────────▼──────────┐  ┌───────▼───────────────────┐
-│  Redis + Celery     │  │  Python Services           │
-│  BatchTransferTask  │  │  CategoryLocalizationSvc   │
-│  Task queue         │  │  HistoryService            │
-│  24h category cache │  │  SQLAlchemy queries        │
-└──────────┬──────────┘  └───────────────────────────┘
-           │ upload / fetch
-┌──────────▼──────────────────────────────────────────┐
-│  Data Layer                                         │
-│  MySQL — transfer_history table                     │
-│  MediaWiki API — Upload, Langlinks, Categories      │
-└─────────────────────────────────────────────────────┘
-```
+---
 
-## Tech Stack (Exact)
+## Technical Stack
 
-| Layer | Tool | Version |
+| Layer | Tool | Purpose |
 |---|---|---|
-| Framework | React | 18 |
-| UI Components | Material-UI (MUI) | 6 |
-| Language | JavaScript (ES2022) | — |
-| HTTP client | Axios | latest |
-| State management | React Context + useReducer | built-in |
-| Routing | React Router DOM | v6 |
-| i18n | react-i18next | latest |
-| Build tool | Vite | latest |
-| Testing | Cypress (E2E) | latest |
+| **Frontend** | React 18 / MUI 6 | Core UI and Component Architecture |
+| **State** | Context API | Modular state for Batch and History |
+| **Routing** | React Router v6 | Client-side navigation |
+| **i18n** | react-i18next | International support (EN, ES, FR, DE, IT) |
+| **API** | Axios | RESTful communication with Flask |
+| **Testing** | Cypress | End-to-End verification |
 
-## How to Run the Application
+---
+
+## How to Run
 
 ### 1. Prerequisites
 - **Node.js**: Version 20 or higher.
 - **Git**: To clone the repository.
 
-### 2. Running with Automation Scripts (Windows)
-Navigate to the `wikifile-transfer-frontend` directory and use the provided batch files:
+### 2. Quick Start (Windows)
+Navigate to the `wikifile-transfer-frontend` directory and use:
 - **`setup.bat`**: Installs all required dependencies.
 - **`start.bat`**: Launches the application in **Mock Mode** (no backend required).
 
-### 3. Manual Steps (Cross-platform)
+### 3. Manual Deployment
 ```bash
 cd wikifile-transfer-frontend
-
-# Install dependencies
 npm install --force
-
-# Start in Mock Mode
 VITE_USE_MOCK=true npm run dev
-
-# Start with real Backend
-npm run dev
 ```
 
 The application will be available at `http://localhost:5173`.

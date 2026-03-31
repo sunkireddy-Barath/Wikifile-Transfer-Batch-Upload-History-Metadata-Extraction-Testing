@@ -14,8 +14,7 @@
     "singleTransfer": "Transfert Unique",
     "batchUpload": "Téléchargement par Lot",
     "history": "Historique des Téléchargements",
-    "language": "Langue",
-    "user": "Connecté en tant que {{user}}"
+    "language": "Langue"
   },
   "batch": {
     "panelTitle": "Téléchargement par Lot",
