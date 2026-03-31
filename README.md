@@ -14,6 +14,13 @@ The **Wikifile-Transfer Dashboard** is a specialized tool under the GSoC 2026 pr
 
 The project emphasizes **Operational Efficiency** and **Data Integrity**, ensuring that contributors can move large volumes of media (including non-free content) with automated metadata localization and robust error handling.
 
+### Key Capabilities
+- **🚀 Global Batch Transfer**: Initiate up to 50 file transfers in a single operation.
+- **🔄 Live Status Polling**: Per-file progress tracking with automatic 2s interval polling.
+- **📊 Intelligence Dashboard**: Comprehensive statistics and history filtering for all past operations.
+- **🌍 International Support**: Pre-configured with English, Spanish, French, German, and Italian localizations.
+- **🛠️ Category Localization**: Automated translation of media categories to the target wiki's language.
+
 ---
 
 ## Project Motivation
@@ -61,6 +68,13 @@ graph TD
     end
 ```
 
+### Data Flow Execution
+1. **Initiation**: The contributor selects source file titles and shared metadata.
+2. **Dispatch**: The React frontend sends a `POST` request to the Flask API.
+3. **Queueing**: Tasks are enqueued in Redis for Celery workers.
+4. **Execution**: Workers fetch from origin, localize categories, and upload to the target via the MediaWiki API.
+5. **Feedback Loop**: The frontend polls for status updates, reflecting per-file success or failure in real-time.
+
 ---
 
 ## Technical Stack
@@ -73,6 +87,18 @@ graph TD
 | **i18n** | react-i18next | International support (EN, ES, FR, DE, IT) |
 | **API** | Axios | RESTful communication with Flask |
 | **Testing** | Cypress | End-to-End verification |
+
+---
+
+## API Reference Overview
+
+### Batch Operations
+- `POST /api/batch-upload`: Initiate a new multi-file transfer.
+- `GET /api/batch-status/{id}`: Poll the live status of an active batch.
+
+### Analytics & History
+- `GET /api/history`: Retrieve paginated and filtered transfer records.
+- `POST /api/retry/{id}`: Re-enqueue a failed transfer operation.
 
 ---
 
@@ -95,3 +121,16 @@ VITE_USE_MOCK=true npm run dev
 ```
 
 The application will be available at `http://localhost:5173`.
+
+---
+
+## Development Workflow
+
+1. **Local Dev**: Use `VITE_USE_MOCK=true` to work on UI features independently.
+2. **Testing**: Run `npm run cypress:run` locally before submitting pull requests.
+3. **CI/CD**: Changes pushed to `main` are automatically verified via GitHub Actions.
+
+## Author & Mentors
+**Author**: Sunkireddy Barath (GSoC 2026 Contributor)
+**Mentors**: @ParasharSarthak, @Jnanaranjan_sahu
+**Organization**: Wikimedia Foundation
