@@ -1,4 +1,5 @@
 @echo off
+cd /d %~dp0
 echo ==========================================
 echo Wikifile-Transfer Frontend Setup
 echo ==========================================
