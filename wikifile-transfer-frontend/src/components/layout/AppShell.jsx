@@ -37,9 +37,17 @@ export default function AppShell({ children }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, fontWeight: 600 }}>
-            Wikifile-Transfer
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, gap: 1.5 }}>
+            <Box
+              component="img"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo-%233366CC.svg"
+              sx={{ width: 32, height: 32, display: { xs: 'flex', sm: 'none' } }}
+              alt="Logo"
+            />
+            <Typography variant="h6" noWrap component="div" sx={{ fontWeight: 600 }}>
+              Wikifile-Transfer
+            </Typography>
+          </Box>
         </Toolbar>
       </AppBar>
       <Box
